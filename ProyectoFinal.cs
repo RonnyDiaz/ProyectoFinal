@@ -69,7 +69,7 @@ namespace ProyectoF
                         Console.Write("\nDigite la cedula como No.Usuario: ");
                         usuario[i] = Console.ReadLine();
 
-                    } while(usuario[i].Length != 11);
+                    } while(usuario[i].Length != 11 || long.TryParse(usuario[i], out Devuelta) == false);
                 }
                
                 Console.Write("Escribe una contraseña: ");
