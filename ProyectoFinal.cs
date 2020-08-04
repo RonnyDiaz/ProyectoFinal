@@ -30,14 +30,14 @@ namespace ProyectoF
 
             int a;
             Random Status = new Random();
-            a = Status.Next(1, 5);
+            a = Status.Next(1, 3);
             string estado = "";
 
-            if (a == 1 || a == 2 )
+            if (a == 1)
             {
                 estado = "Activo";
             }
-            if (a == 3|| a == 4)
+            if (a == 2)
             {
                 estado = "Inactivo";
                 
